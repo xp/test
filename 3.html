@@ -29,22 +29,19 @@ window.onload = function() {
 "></div>
 
 
-<script type="text/javascript">
-(function(url){
-  var iframe = document.createElement('iframe');
-  (iframe.frameElement || iframe).style.cssText = "border: 0";
-  var where = document.getElementsByTagName('script');
-  where = where[where.length - 1];
-  where.parentNode.insertBefore(iframe, where);
-  var doc = iframe.contentWindow.document;
-  doc.open().write('<body onload="'+
-    'var js = document.createElement(\'script\');'+
-    'js.src = \''+ url +'\';'+
-    'document.body.appendChild(js);"><div id="Sprout_2gAz3n-pPHRNw0H3_div"></div>');
-  doc.close();
-})('http://farm.sproutbuilder.com/load/2gAz3n-pPHRNw0H3.inmobi.html.review.js');
+<div id="Sprout_2gAz3n-pPHRNw0H3_div"></div>
+<script>
+  var _Sprout=_Sprout||{};_Sprout.querystring={'rl':''};
+  (function() { 
+    var scripts = document.getElementsByTagName("script"); 
+    var me = scripts[scripts.length-1]; 
+    var loader = document.createElement("script"); 
+    loader.async = true; 
+    loader.type = "text/javascript"; 
+    loader.src = "http://edgy.sproutbuilder.com/load/2gAz3n-pPHRNw0H3.inmobi.html.js"; 
+    me.parentNode.insertBefore(loader, me.nextSibling); 
+  })();
 </script>
-
 
 
 </body>
